@@ -1,0 +1,7 @@
+CREATE OR REPLACE TABLE programmes (
+    nom VARCHAR(255) NOT NULL
+);
+
+INSERT INTO programmes VALUES ('IFT');
+INSERT INTO programmes VALUES ('GLO');
+INSERT INTO programmes VALUES ('IIG');
