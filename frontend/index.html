@@ -1,6 +1,13 @@
+<!-- CECI EST LA PAGE D'ACCUEIL --> 
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <audio controls>
+        <source src="img/Pitbull - International Love (Official Video) ft. Chris Brown.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+      </audio> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,21 +20,73 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js" defer></script>
 </head>
-<body>
+<script>
+    var x = document.getElementById("controls");
+
+function playAudio() {
+  x.play();
+} 
+    </script>
+<body onload = "playAudio()">
     <header class="header">
         <div class="logo">Rouge et Or</div>
         <nav class="navbar">
             <a href="#">Accueil</a>
+            <a href="events.html">Événements</a>
+            <a href="pageConnexion.html">Se connecter</a>
+            <a href="creationCompte.html">Créer un compte</a>
+            <a href="about.html">À propos</a>
         </nav>
     </header>
 
     <section class="hero">
-        <h1>Bienvenue sur le site de réservation du Rouge et Or de l'Université Laval</h1>
-        <a href="#" id="ul-buy-tickets-btn" class="cta-button">Acheter des billets</a>
+        <h1>Bienvenue sur le site de réservation du Rouge et Or de l'Université Laval! Utilisez des écouteurs pour une immersion complète</h1>
+        <a href="#" id="ul-buy-tickets-btn" class="cta-button">Acheter des billets</a> <!-- CE BOUTON EST LINKÉ CORRECTEMENT --> 
     </section>
 
     <footer class="footer">
         <p>&copy; 2024 Université Laval - Tous droits réservés</p>
     </footer>
+
 </body>
 </html>
+
+
+<!-- Mon plan : 
+
+index.html : page d'accueil (on touche pas)
+mène a pageConnexion ou tu te connectes
+Sinon, tu peux créer une compte sur la page creationCompte
+
+et aussinon, pluger la page mascotte.html a quelque part, style "A propos"
+
+-->
+
+<!-- Checklist : 
+
+- Mascotte ULAVAL (+ animation CSS)
+
+- événements a venir 
+
+- Création de compte
+
+Champs requis:
+
+    Prénom
+    Nom de famille
+    Sexe (Homme, Femme, non-binaire, etc.)
+    Programme (sélectionné parmi ceux stockés en base de données)
+    Date de naissance
+    Courriel ULaval (validation sur le domaine @ulaval.ca)
+    Mot de passe (minimum 8 caractères, avec au moins un chiffre et un symbole)
+
+
+- Connexion avec adresse ulaval + mdp
+- changements des infos utilisateurs 
+
+- représentation visuelle des sièges (fuck this shit LOL)
+
+- Affichage des billets possédés
+
+qwqw
+-->

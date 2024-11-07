@@ -1,0 +1,61 @@
+<!-- Cette page n'est pas encore linké --> 
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Réservation de billets - Rouge et Or</title>
+
+    <link rel="icon" href="img/Logo_RougeEtOr.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Rouge et Or</div>
+        <nav class="navbar">
+            <a href="index.html">Accueil</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Bienvenue sur le site de réservation du Rouge et Or de l'Université Laval</h1>
+
+        <form action="/action_page.php">
+            <label for="fname">Prénom :</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="lname">Nom de famille :</label>
+            <input type="text" id="family_name" name="family_name"><br><br>
+            <label for="lname">Sexe :</label> 
+            <select name="pets" id="sex-select">
+                <option value="dog">Homme</option>
+                <option value="cat">Femme</option>
+                <option value="hamster">Non-binaire</option>
+                <option value="parrot">Préfère ne pas répondre</option>
+            </select>
+            <label for="lname">Programme :</label>
+            <input type="text" id="programm" name="programm"><br><br>
+            <label for="lname">Date de naissance :</label>
+            <input type="text" id="birth_date" name="birth_date"><br><br>
+            <label for="lname">Courriel ULaval :</label>
+            <input type="text" id="courriel" name="courriel"><br><br>
+            <label for="lname">Mot de passe :</label>
+            <input type="text" id="mdp" name="mdp"><br><br>
+
+
+            <input type="submit" value="Submit">
+          </form> 
+    </section>
+
+    
+
+    <footer class="footer">
+        <p>&copy; 2024 Université Laval - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

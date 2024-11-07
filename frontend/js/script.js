@@ -1,5 +1,5 @@
 $('#ul-buy-tickets-btn').click(function () {
-    alert('Le bouton fonctionne')
+    open('pageConnexion.html') //Le bouton mène de index.html a pageConnexion.html
 });
 
 $(document).ready(function () {
