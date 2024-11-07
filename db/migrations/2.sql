@@ -1,0 +1,6 @@
+CREATE OR REPLACE TABLE sexes (
+    nom VARCHAR(255) NOT NULL
+);
+
+INSERT INTO sexes VALUES ('Homme');
+INSERT INTO sexes VALUES ('Femme');
